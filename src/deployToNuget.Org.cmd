@@ -1,10 +1,6 @@
 del *.nupkg
 
-nuget restore
-
-msbuild CDAPackage.sln /p:Configuration=Release
-
-NuGet.exe pack CDAPackage/CDAPackage.csproj -Properties Configuration=Release
+dotnet pack .\CDAPackage\CDAPackage.csproj -c Release -o .
 
 pause
 
