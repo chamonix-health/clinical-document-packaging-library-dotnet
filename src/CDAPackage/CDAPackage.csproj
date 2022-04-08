@@ -23,6 +23,9 @@
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System.Security" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="DotNetZip" Version="1.16.0" />
     <PackageReference Include="Nehta.VendorLibrary.Common" Version="4.2.2" />
     <PackageReference Include="Nehta.Xsp" Version="1.3.1" />
