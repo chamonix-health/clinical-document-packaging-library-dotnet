@@ -22,7 +22,7 @@
     <PackageTags>ADHA Digital Health Nehta</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
     <Reference Include="System.Security" />
   </ItemGroup>
   <ItemGroup>
